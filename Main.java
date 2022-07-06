@@ -177,7 +177,7 @@ public class Main
 	
 	public static void Updated(ArrayList<Employee> list) {
 	    Scanner scan = new Scanner(System.in);
-	    System.out.println("Enter ID: ");
+	    System.out.printf("Enter ID: ");
 	    String ID = scan.nextLine();
 	    boolean found = false;
 	    for(Employee e : list) {
