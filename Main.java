@@ -43,8 +43,7 @@ class Employee {
 }
 
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 	   ArrayList<Employee> list = new ArrayList<>();
 	   getUserInput(list);
@@ -53,7 +52,7 @@ public class Main
 	public static void getUserInput(ArrayList<Employee> list) {
 	    Scanner scan = new Scanner(System.in);
 	    int exit = 0;
-	    do{
+	    do {
 	        System.out.println("");
 	        System.out.println("1) Add Employee");
 	        System.out.println("2) View Employee");
@@ -154,7 +153,7 @@ public class Main
 	            }
 	        } catch(InputMismatchException error ) {
 	            System.out.println("Wrong key");
-                yes = false;
+                    yes = false;
 	        }
 	    }while(yes == true);
 	}
@@ -191,7 +190,7 @@ public class Main
 	            e.setName(Name);
 	            e.setEmail(Email);
 	            System.out.println("Updated details of Employee successfully are: ");
-                System.out.println(e);	        
+                    System.out.println(e);	        
 	            found = true;
 	        }
 	    }
